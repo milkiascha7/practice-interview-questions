@@ -1,0 +1,11 @@
+{
+  "name": "algorithm-datastructure-interview",
+  "version": "1.0.0",
+  "description": "interview questions practice",
+  "main": "reverseString.js",
+  "scripts": {
+    "start": "node reverseString.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
