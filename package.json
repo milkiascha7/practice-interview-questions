@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node reverseString.js"
+    "start": "node mergeSortedArrays.js"
   },
   "author": "",
   "license": "ISC"

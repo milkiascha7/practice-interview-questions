@@ -1,4 +1,5 @@
 // reverse a string
+// given a set of strings return the reverse of the string
 function ReverseStringIterative(string) {
   if (typeof string !== 'string') {
     throw new TypeError('The given value is not a string');
