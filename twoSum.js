@@ -34,11 +34,11 @@ const optimizedTwoSum = (array, goal) => {
   for (let i = 0; i < array.length; i++) {
     let target = goal - array[i];
     if (mapOfNumbers[target] !== null && mapOfNumbers[target] !== i) {
-      twoIndexes.push(i);
+      // twoIndexes.push(i);
       twoIndexes.push(mapOfNumbers[target]);
     }
   }
 
   return twoIndexes;
 };
-console.log(optimizedTwoSum([0, 3, 5, 6, 9], 11));
+console.log(optimizedTwoSum([0, 5, 3, 6, 9], 11));

@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node containsDuplicate.js"
+    "start": "node twoSum.js"
   },
   "author": "",
   "license": "ISC"
