@@ -43,10 +43,11 @@ function containsCommonItem2(arr1, arr2) {
 
   // loop through second array and check if the item in second array exits on created object
   for (let j = 0; j < arr2.length; j++) {
+    console.log([arr2[j]]);
     if (map[arr2[j]]) {
       return true;
     }
   }
   return false;
 }
-console.log(containsCommonItem2(['a', 'b', 'c', 'x'], ['x', 'y', 'i']));
+console.log(containsCommonItem2(['a', 'b', 'c', 'x'], ['w', 'y', 'i']));
