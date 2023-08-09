@@ -12,6 +12,12 @@
 //         }
 //     }
 // }
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
 
 class LinkedList {
   constructor(value) {
@@ -25,10 +31,12 @@ class LinkedList {
 
   append(value) {
     //   create the new node first with the same properties
-    const newNode = {
-      value: value,
-      next: null,
-    };
+    // const newNode = {
+    //   value: value,
+    //   next: null,
+    // };
+
+    const newNode = new Node(value);
 
     this.tail.next = newNode;
     this.tail = newNode;
@@ -38,14 +46,16 @@ class LinkedList {
   }
 
   prepend(value) {
-    const firstNode = {
-      value: value,
-      next: null,
-    };
+    // const firstNode = {
+    //   value: value,
+    //   next: null,
+    // };
+    const newNode = new Node(value);
+
     // this.head.next = firstNode;
 
-    firstNode.next = this.head;
-    this.head = firstNode;
+    newNode.next = this.head;
+    this.head = newNode;
 
     this.length++;
 
