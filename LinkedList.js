@@ -30,9 +30,23 @@ class LinkedList {
       next: null,
     };
 
-    console.log('first node', this);
     this.tail.next = newNode;
     this.tail = newNode;
+    this.length++;
+
+    return this;
+  }
+
+  prepend(value) {
+    const firstNode = {
+      value: value,
+      next: null,
+    };
+    // this.head.next = firstNode;
+
+    firstNode.next = this.head;
+    this.head = firstNode;
+
     this.length++;
 
     return this;
@@ -41,5 +55,6 @@ class LinkedList {
 
 const myLinkedList = new LinkedList(10);
 myLinkedList.append(5);
+myLinkedList.prepend(14);
 
 console.log(myLinkedList);
