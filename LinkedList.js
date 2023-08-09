@@ -22,8 +22,24 @@ class LinkedList {
     this.tail = this.head;
     this.length = 1;
   }
+
+  append(value) {
+    //   create the new node first with the same properties
+    const newNode = {
+      value: value,
+      next: null,
+    };
+
+    console.log('first node', this);
+    this.tail.next = newNode;
+    this.tail = newNode;
+    this.length++;
+
+    return this;
+  }
 }
 
 const myLinkedList = new LinkedList(10);
+myLinkedList.append(5);
 
 console.log(myLinkedList);
