@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node LinkedList.js"
+    "start": "node tictactoe.js"
   },
   "author": "",
   "license": "ISC"

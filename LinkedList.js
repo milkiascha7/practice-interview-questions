@@ -41,6 +41,7 @@ class LinkedList {
     return this;
   }
 
+  // adding a node at the first
   prepend(value) {
     const newNode = new Node(value);
 
@@ -103,4 +104,5 @@ console.log(myLinkedList.printList());
 myLinkedList.insert(2, 28);
 myLinkedList.insert(200, 128);
 myLinkedList.insert(3, 13);
+myLinkedList.prepend(19);
 console.log(myLinkedList.printList());
