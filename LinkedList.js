@@ -94,6 +94,15 @@ class LinkedList {
     }
     return currentNode;
   }
+
+  remove(index) {
+    // check params
+    const leader = this.traverseToIndex(index - 1);
+    const unWantedNode = leader.next;
+    leader.next = unWantedNode.next;
+    this.length--;
+    return this.printList();
+  }
 }
 
 const myLinkedList = new LinkedList(10);
