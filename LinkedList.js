@@ -114,4 +114,5 @@ myLinkedList.insert(2, 28);
 myLinkedList.insert(200, 128);
 myLinkedList.insert(3, 13);
 myLinkedList.prepend(19);
+myLinkedList.remove(2);
 console.log(myLinkedList.printList());
