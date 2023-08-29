@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node Mutations.js"
+    "start": "node ChunkyMonkey.js"
   },
   "author": "",
   "license": "ISC"
