@@ -17,7 +17,8 @@ function largestOfFour(arr) {
         largestArray = arr[i][j];
       }
     }
-    newArray[i] = largestArray;
+    // newArray[i] = largestArray;
+    newArray.push(largestArray);
   }
   return newArray;
 }
@@ -30,3 +31,12 @@ console.log(
     [1000, 1001, 857, 1],
   ])
 );
+
+// using map and reduce method
+function largestOfFour(arr) {
+  return arr.map(function (group) {
+    return group.reduce(function (prev, current) {
+      return current > prev ? current : prev;
+    });
+  });
+}
