@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node ConfirmTheEnding.js"
+    "start": "node repeatAstring.js"
   },
   "author": "",
   "license": "ISC"
