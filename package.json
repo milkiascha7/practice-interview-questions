@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node falsyBouncer.js"
+    "start": "node WheredoIBelong.js"
   },
   "author": "",
   "license": "ISC"
