@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node returnLongestString.js"
+    "start": "node ReturnLargestNumbersinArrays.js"
   },
   "author": "",
   "license": "ISC"

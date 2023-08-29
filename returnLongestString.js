@@ -1,6 +1,6 @@
 function findLongestWordLength(str) {
   let arrayWords = str.split(' ');
-  console.log('arrayWords', arrayWords[1]);
+  console.log('arrayWords', arrayWords);
 
   let maxLength = 0;
   for (let i = 0; i < arrayWords.length; i++) {
