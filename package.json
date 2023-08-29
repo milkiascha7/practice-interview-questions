@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node SliceandSplice.js"
+    "start": "node falsyBouncer.js"
   },
   "author": "",
   "license": "ISC"
