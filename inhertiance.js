@@ -170,3 +170,44 @@ bird.fly();
 plane.fly(); //The console would display the string Flying, wooosh! twice, once for each .fly() call.
 
 // the mixin allows for the same fly method to be reused by unrelated objects bird and plane.
+
+// --------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------
+
+// Use an IIFE to Create a Module
+
+// An immediately invoked function expression (IIFE) is often used to group related functionality into a single object or module.
+
+// from the mixin example we can group the methods
+
+function glideMixin(obj) {
+  obj.glide = function () {
+    console.log('Gliding on the water');
+  };
+}
+function flyMixin(obj) {
+  obj.fly = function () {
+    console.log('Flying, wooosh!');
+  };
+}
+
+// alltogehter like this
+
+let motionModule = (function () {
+  return {
+    glideMixin: function (obj) {
+      obj.glide = function () {
+        console.log('Gliding on the water');
+      };
+    },
+    flyMixin: function (obj) {
+      obj.fly = function () {
+        console.log('Flying, wooosh!');
+      };
+    },
+  };
+})();
+
+// we can use it like this
+motionModule.glideMixin(duck);
+duck.glide();
