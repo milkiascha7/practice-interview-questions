@@ -49,6 +49,7 @@ console.log(tea4GreenTeamFCC, tea4BlackTeamFCC);
 // ----------------------------------------------------------------------------------------------------------------------------------
 // ----------------------------------------------------------------------------------------------------------------------------------
 
+// question
 // Implement map on a Prototype
 
 // Write your own Array.prototype.myMap(), which should behave exactly like Array.prototype.map().
@@ -76,6 +77,30 @@ Array.prototype.myMap = function (callback) {
     newArray.push(callback(element, index, originalArr))
   );
 
+  // Only change code above this line
+  return newArray;
+};
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+
+// question
+// Implement filter on a Prototype
+
+// solution
+Array.prototype.myMap = function (callback) {
+  const newArray = [];
+  // Only change code below this line
+  for (let i = 0; i < this.length; i++) {
+    if (Boolean(callback(this[i], i, this)) === true) {
+      newArray.push(this[i]);
+    }
+
+    // OR
+    // if (callback(this[i], i, this) == true) {
+    //   newArray.push(this[i]);
+    // }
+  }
   // Only change code above this line
   return newArray;
 };
