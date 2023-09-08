@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node mapandfilter.js"
+    "start": "node reduceMethod.js"
   },
   "author": "",
   "license": "ISC"
