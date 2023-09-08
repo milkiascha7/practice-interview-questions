@@ -217,17 +217,26 @@ console.log(getRating(watchList));
 */
 }
 
-const squareList = (arr) => {
-  // Only change code below this line
-  let newArray = arr.filter(
-    (number) => number > 0 && number % parseInt(number) === 0
-  );
-  console.log(newArray);
+// const squareList = (arr) => {
+//   // Only change code below this line
+//   let newArray = arr.filter(
+//     (number) => number > 0 && number % parseInt(number) === 0
+//   );
+//   console.log(newArray);
 
-  let returnArray = newArray.map((number) => Math.pow(number, 2));
-  return returnArray;
-  // Only change code above this line
-};
+//   let returnArray = newArray.map((number) => Math.pow(number, 2));
+//   return returnArray;
+//   // Only change code above this line
+// };
 
 const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
 console.log(squaredIntegers);
+
+// ANOTHER OPTION USING REDUCE METHOD
+const squareList = (arr) => {
+  return arr.reduce((sqrIntegers, num) => {
+    return Number.isInteger(num) && num > 0
+      ? sqrIntegers.concat(num * num)
+      : sqrIntegers;
+  }, []);
+};
