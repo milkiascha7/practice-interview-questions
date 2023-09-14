@@ -48,11 +48,12 @@ function whatIsInAName(collection, source) {
   // "What's in a name? that which we call a rose
   // By any other name would smell as sweet.”
   // -- by William Shakespeare, Romeo and Juliet
-  const souceKeys = Object.keys(source);
+  const sourceKeys = Object.keys(source);
 
   // filter the collection
   return collection.filter((obj) => {
     for (let i = 0; i < sourceKeys.length; i++) {
+      console.log(obj[sourceKeys[i]]); // this will print out Montague null Capulet
       if (obj[sourceKeys[i]] !== source[sourceKeys[i]]) {
         return false;
       }
