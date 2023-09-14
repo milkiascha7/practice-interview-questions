@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node DiffTwoArrays.js"
+    "start": "node WhereforeArtThou.js"
   },
   "author": "",
   "license": "ISC"

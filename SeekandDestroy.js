@@ -16,6 +16,10 @@
 }
 
 // simple method uisng rest parameter and filter
+{
+  /** Using spread operator to retrieve the arguments.
+    Return the filtered array, using includes(). */
+}
 function destroyer(arr, ...valsToRemove) {
   return arr.filter((elem) => !valsToRemove.includes(elem));
 }
