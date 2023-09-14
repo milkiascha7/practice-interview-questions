@@ -28,3 +28,14 @@ spinalCase('This Is Spinal Tap');
     The first replace() puts a space before any encountered uppercase characters in the string str so that the spaces can be replaced by dashes later on.
     While returning the string, another replace() replaces spaces and underscores with dashes using regex. */
 }
+
+// another simple method
+function spinalCase(str) {
+  // "It's such a fine line between stupid, and clever."
+  // --David St. Hubbins
+
+  return str
+    .split(/\s|_|(?=[A-Z])/)
+    .join('-')
+    .toLowerCase();
+}
