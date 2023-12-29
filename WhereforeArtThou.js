@@ -24,36 +24,41 @@
 //   }
 // }
 
-function whatIsInAName(collection, source) {
-  // What's in a name?
-  const collectionMatches = [];
+// function whatIsInAName(collection, source) {
+//   // What's in a name?
+//   const collectionMatches = [];
 
-  for (let i = 0; i < collection.length; i++) {
-    let foundMismatch = false;
+//   for (let i = 0; i < collection.length; i++) {
+//     let foundMismatch = false;
 
-    for (const sourceProp in source) {
-      if (collection[i][sourceProp] !== source[sourceProp]) {
-        foundMismatch = true;
-      }
-    }
-    if (!foundMismatch) {
-      collectionMatches.push(collection[i]);
-    }
-  }
-  return collectionMatches;
-}
+//     for (const sourceProp in source) {
+//       if (collection[i][sourceProp] !== source[sourceProp]) {
+//         foundMismatch = true;
+//       }
+//     }
+//     if (!foundMismatch) {
+//       collectionMatches.push(collection[i]);
+//     }
+//   }
+//   return collectionMatches;
+// }
+
+// "What's in a name? that which we call a rose
+// By any other name would smell as sweet.”
+// -- by William Shakespeare, Romeo and Juliet
 
 // using another method with filter
 function whatIsInAName(collection, source) {
-  // "What's in a name? that which we call a rose
-  // By any other name would smell as sweet.”
-  // -- by William Shakespeare, Romeo and Juliet
   const sourceKeys = Object.keys(source);
+
+  console.log('sourceKeys', sourceKeys);
 
   // filter the collection
   return collection.filter((obj) => {
+    console.log('obj', obj);
+    console.log('sourceKeys.length', sourceKeys.length);
     for (let i = 0; i < sourceKeys.length; i++) {
-      console.log(obj[sourceKeys[i]]); // this will print out Montague null Capulet
+      console.log('obj source key', obj[sourceKeys[i]]); // this will print out Montague null Capulet
       if (obj[sourceKeys[i]] !== source[sourceKeys[i]]) {
         return false;
       }
@@ -63,6 +68,7 @@ function whatIsInAName(collection, source) {
 }
 
 console.log(
+  'final answer',
   whatIsInAName(
     [
       { first: 'Romeo', last: 'Montague' },
