@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node SearchAndReplace.js"
+    "start": "node DnaParing.js"
   },
   "author": "",
   "license": "ISC"
