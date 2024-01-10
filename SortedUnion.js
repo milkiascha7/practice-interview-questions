@@ -23,20 +23,20 @@
 }
 
 function uniteUnique(arr) {
-  var args = Array.from(arguments);
+  const arrgs = [...arguments];
 
-  console.log('args', args);
-  var uniqueNumber = [];
+  var newArray = [];
 
-  for (var i = 0; i < args.length; i++) {
-    for (var j = 0; j < args[i].length; j++) {
-      if (!uniqueNumber.includes(args[i][j])) {
-        uniqueNumber.push(args[i][j]);
+  for (let i = 0; i < arrgs.length; i++) {
+    for (let j = 0; j < arrgs[i].length; j++) {
+      if (!newArray.includes(arrgs[i][j])) {
+        newArray.push(arrgs[i][j]);
       }
     }
   }
-
-  return uniqueNumber;
+  return newArray;
 }
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 
 console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
