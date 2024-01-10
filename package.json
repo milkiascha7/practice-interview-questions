@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node MissingLetters.js"
+    "start": "node SortedUnion.js"
   },
   "author": "",
   "license": "ISC"
