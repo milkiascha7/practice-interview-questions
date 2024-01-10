@@ -31,7 +31,7 @@ function uniteUnique(arr) {
   for (var i = 0; i < args.length; i++) {
     for (var j = 0; j < args[i].length; j++) {
       if (!uniqueNumber.includes(args[i][j])) {
-        uniqueNumber.unshift(args[i][j]);
+        uniqueNumber.push(args[i][j]);
       }
     }
   }
