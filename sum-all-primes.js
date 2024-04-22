@@ -17,11 +17,13 @@ function sumPrimes(num) {
   
   // helper function that returns if a number is a prime or not
   function isPrime(n) {
+    // base case
     if (n <= 1) return false;
+
     for (let i = 2; i <= (n/2); i++) {
         console.log('i is', i)
         if (n % i === 0) {
-        return false;
+            return false;
         }
     }
     return true;

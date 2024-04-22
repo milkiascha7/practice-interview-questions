@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node sum-all-primes.js"
+    "start": "node smallest-common-multiple.js"
   },
   "author": "",
   "license": "ISC"
