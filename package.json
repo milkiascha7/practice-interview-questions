@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node Sum-All-Odd-Fibonacci-Numbers.js"
+    "start": "node sum-all-primes.js"
   },
   "author": "",
   "license": "ISC"
