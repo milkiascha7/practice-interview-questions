@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node drop-it.js"
+    "start": "node Steamroller.js"
   },
   "author": "",
   "license": "ISC"
