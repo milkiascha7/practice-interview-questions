@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node palindrom.js"
+    "start": "node convert-to-romanNumber.js"
   },
   "author": "",
   "license": "ISC"
