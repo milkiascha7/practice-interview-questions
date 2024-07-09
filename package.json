@@ -4,7 +4,7 @@
   "description": "interview questions practice",
   "main": "reverseString.js",
   "scripts": {
-    "start": "node map-debris.js"
+    "start": "node palindrom.js"
   },
   "author": "",
   "license": "ISC"
